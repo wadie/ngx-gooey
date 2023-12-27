@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "outDir": "../out-tsc/app",
+    "types": []
+  },
+  "files": ["main.ts"],
+  "include": ["**/*.d.ts"]
+}
