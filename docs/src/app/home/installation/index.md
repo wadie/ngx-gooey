@@ -8,7 +8,7 @@ The 'gooey effect' has been made popular by various (amazing) blogposts over the
 
 ## {{ NgDocPage.title }}
 
-`npm install gooey-react`
+`npm install ngx-gooey`
 
 ---
 
