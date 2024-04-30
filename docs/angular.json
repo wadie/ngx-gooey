@@ -46,6 +46,11 @@
                 "glob": "**/*",
                 "input": "assets/",
                 "output": "assets/"
+              },
+              {
+                "glob": "_redirects",
+                "input": "src",
+                "output": "/"
               }
             ],
             "index": "src/index.html",
