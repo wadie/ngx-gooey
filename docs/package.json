@@ -15,7 +15,7 @@
     "@ng-doc/builder": "17.2.0",
     "@ng-doc/core": "17.2.0",
     "@ng-doc/ui-kit": "17.2.0",
-    "ngx-gooey": "^1.0.5",
+    "ngx-gooey": "^18.0.1",
     "rxjs": "7.8.1",
     "tailwind": "^4.0.0",
     "tslib": "2.6.2",
