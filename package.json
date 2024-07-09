@@ -39,7 +39,7 @@
     "@angular/common": "^18.0.5",
     "@angular/compiler": "^18.0.5",
     "@angular/compiler-cli": "^18.0.5",
-    "@angular/core": "^18.0.5",
+    "@angular/core": "^18.0.6",
     "@angular/forms": "^18.0.5",
     "@angular/language-service": "^18.0.5",
     "@angular/platform-browser": "^18.0.5",
