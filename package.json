@@ -1,6 +1,6 @@
 {
   "name": "ngx-gooey",
-  "version": "18.0.1",
+  "version": "19.0.0",
   "scripts": {
     "build": "ng build ngx-gooey",
     "build:release": "ng build --configuration production",
