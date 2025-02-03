@@ -1,10 +1,9 @@
 <ng-doc-root>
-	<ng-doc-navbar [leftContent]="leftContent" [rightContent]="rightContent" [glassEffect]="true">
-		<ng-template #leftContent>
+	<ng-doc-navbar [glassEffect]="true">
+		<div ngDocNavbarLeft>
 			<h3 style="margin: 0">ngx-gooey</h3>
-		</ng-template>
-		<ng-template #rightContent>
-			<ng-doc-theme-toggle></ng-doc-theme-toggle>
+		</div>
+		<div ngDocNavbarRight>
 			<div @preventInitialChild class="ng-doc-header-controls">
 				<a
 					href="https://github.com/wadie/ngx-gooey/"
@@ -15,7 +14,7 @@
 					<ng-doc-icon [size]="24" customIcon="github"></ng-doc-icon>
 				</a>
 			</div>
-		</ng-template>
+		</div>
 	</ng-doc-navbar>
 	<ng-doc-sidebar></ng-doc-sidebar>
 <router-outlet></router-outlet>

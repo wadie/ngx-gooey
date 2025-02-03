@@ -7,7 +7,6 @@ import {
 import {
   NG_DOC_DEFAULT_PAGE_PROCESSORS,
   NG_DOC_DEFAULT_PAGE_SKELETON,
-  NG_DOC_NIGHT_THEME,
   NgDocDefaultSearchEngine,
   NgDocNavbarComponent,
   NgDocRootComponent,
@@ -22,7 +21,6 @@ import { NG_DOC_ROUTING, provideNgDocContext } from '@ng-doc/generated';
 import {
   NgDocButtonIconComponent,
   NgDocIconComponent,
-  NgDocMediaQueryDirective,
   NgDocTooltipDirective,
 } from '@ng-doc/ui-kit';
 
@@ -30,7 +28,6 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Gooey } from 'ngx-gooey';
 import { AppComponent } from './app.component';
 
 @NgModule({ declarations: [AppComponent],
@@ -46,13 +43,12 @@ import { AppComponent } from './app.component';
         NgDocNavbarComponent,
         NgDocSidebarComponent,
         NgDocIconComponent,
-        NgDocMediaQueryDirective,
         NgDocButtonIconComponent,
         NgDocThemeToggleComponent,
         NgDocTooltipDirective,
-        Gooey], providers: [
+        ], providers: [
         provideNgDocContext(),
-        provideNgDocApp({ defaultThemeId: NG_DOC_NIGHT_THEME.id }),
+        provideNgDocApp(),
         provideSearchEngine(NgDocDefaultSearchEngine),
         providePageSkeleton(NG_DOC_DEFAULT_PAGE_SKELETON),
         provideMainPageProcessor(NG_DOC_DEFAULT_PAGE_PROCESSORS),
