@@ -3,9 +3,10 @@ import { Component } from '@angular/core';
 import { preventInitialChildAnimations } from '@ng-doc/ui-kit/animations';
 
 @Component({
-  selector: 'app-component',
-  templateUrl: 'app.component.html',
-  animations: [preventInitialChildAnimations],
+    selector: 'app-component',
+    templateUrl: 'app.component.html',
+    animations: [preventInitialChildAnimations],
+    standalone: false
 })
 export class AppComponent {
   getXPosition(size: number): string {

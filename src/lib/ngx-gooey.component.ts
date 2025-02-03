@@ -3,10 +3,9 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'ngx-gooey',
-  standalone: true,
-  imports: [CommonModule],
-  template: `
+    selector: 'ngx-gooey',
+    imports: [CommonModule],
+    template: `
     <svg data-testid="svg" style="pointer-events: none; position: absolute;">
       <defs>
         <filter
@@ -30,7 +29,7 @@ import { CommonModule } from '@angular/common';
     <div [ngClass]="className" data-testid="element" [ngStyle]="getStyle()">
       <ng-content></ng-content>
     </div>
-  `,
+  `
 })
 export class Gooey {
   @Input() children: any;

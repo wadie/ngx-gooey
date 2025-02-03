@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { Gooey } from 'ngx-gooey';
 
 @Component({
-  selector: 'random-component',
-  standalone: true,
-  imports: [Gooey],
-  template: `<ngx-gooey [intensity]="'strong'">
+    selector: 'random-component',
+    imports: [Gooey],
+    template: `<ngx-gooey [intensity]="'strong'">
     <svg
       role="img"
       aria-label="Example of a gooey effect"
@@ -43,6 +42,6 @@ import { Gooey } from 'ngx-gooey';
         ></circle>
       </g>
     </svg>
-  </ngx-gooey>`,
+  </ngx-gooey>`
 })
 export class RandomComponent {}

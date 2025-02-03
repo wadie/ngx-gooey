@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { Gooey } from 'ngx-gooey';
 
 @Component({
-  selector: 'dotted-demo',
-  standalone: true,
-  imports: [Gooey],
-  template: `<ngx-gooey>
+    selector: 'dotted-demo',
+    imports: [Gooey],
+    template: `<ngx-gooey>
     <svg role="img" aria-label="Example of a gooey effect" class="w-64 h-64">
       <g>
         <circle
@@ -31,6 +30,6 @@ import { Gooey } from 'ngx-gooey';
         />
       </g>
     </svg>
-  </ngx-gooey>`,
+  </ngx-gooey>`
 })
 export class DottedComponent {}

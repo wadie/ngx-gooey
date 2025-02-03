@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { Gooey } from 'ngx-gooey';
 
 @Component({
-  selector: 'rotating-component',
-  standalone: true,
-  imports: [Gooey],
-  template: `<ngx-gooey [intensity]="'strong'"
+    selector: 'rotating-component',
+    imports: [Gooey],
+    template: `<ngx-gooey [intensity]="'strong'"
     ><svg role="img" aria-label="Example of a gooey effect" class="w-64 h-64">
       <g [style.animation]="'rotate 5s linear infinite'">
         <circle cx="50%" cy="30%" r="24" fill="blueviolet"></circle>
@@ -28,6 +27,6 @@ import { Gooey } from 'ngx-gooey';
         ></circle>
       </g>
     </svg>
-  </ngx-gooey>`,
+  </ngx-gooey>`
 })
 export class RotatingComponent {}
