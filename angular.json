@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "./",
     "projects": {
-      "ngx-font-size": {
+      "ngx-gooey": {
         "projectType": "library",
         "root": "./",
         "sourceRoot": "src",
@@ -43,5 +43,8 @@
           }
         }
       }
+    },
+    "cli": {
+      "analytics": false
     }
   }

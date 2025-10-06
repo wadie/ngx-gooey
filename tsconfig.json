@@ -7,15 +7,15 @@
     "esModuleInterop": true,
     "declaration": false,
     "experimentalDecorators": true,
-    "module": "es2020",
+    "module": "ES2022",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
+    "target": "ES2022",
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
-      "es2018",
+      "ES2022",
       "dom"
     ],
     "paths": {
@@ -27,7 +27,6 @@
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true,
-    "enableIvy": false
+    "strictInjectionParameters": true
   }
 }
