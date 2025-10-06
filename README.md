@@ -8,12 +8,6 @@
 </p>
 The 'gooey effect' has been made popular by various (amazing) blogposts over the years. This tiny component makes it easy to use within Angular, and has improved the implementation. It's optimized to be as sharp/crisp as possible, since existing implementations can be a bit blurry. Safari support (which can be notorious, and is usually missing) has been added as well.
 
-## Compatibility
-
-✅ **Angular 20** - Fully compatible and tested  
-✅ **Angular 19** - Previous version  
-✅ **Modern TypeScript** - Uses TypeScript 5.8+  
-✅ **Standalone Components** - Built with Angular's standalone component API  
 
 ## Installation
 
@@ -23,7 +17,7 @@ npm install ngx-gooey
 
 ## Usage
 
-**For Angular 20+ with Standalone Components (Recommended):**
+**For Angular with Standalone Components (Recommended):**
 
 ```typescript
 import { Component } from '@angular/core';
