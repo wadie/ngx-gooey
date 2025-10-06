@@ -1,0 +1,14 @@
+[build]
+  # Simple build that focuses on the main library and creates basic docs
+  command = "npm install && npm run build:release"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+# Redirect everything to a simple landing page
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
