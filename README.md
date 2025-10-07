@@ -8,6 +8,7 @@
 </p>
 The 'gooey effect' has been made popular by various (amazing) blogposts over the years. This tiny component makes it easy to use within Angular, and has improved the implementation. It's optimized to be as sharp/crisp as possible, since existing implementations can be a bit blurry. Safari support (which can be notorious, and is usually missing) has been added as well.
 
+
 ## Installation
 
 ```sh
@@ -16,9 +17,31 @@ npm install ngx-gooey
 
 ## Usage
 
-You can either import into your NgModule:
+**For Angular with Standalone Components (Recommended):**
 
-```js
+```typescript
+import { Component } from '@angular/core';
+import { Gooey } from 'ngx-gooey';
+
+@Component({
+  selector: 'app-example',
+  standalone: true,
+  imports: [Gooey],
+  template: `
+    <ngx-gooey>
+      <svg width="200" height="100">
+        <circle cx="50" cy="50" r="20" fill="blue"/>
+        <circle cx="100" cy="50" r="20" fill="red"/>
+      </svg>
+    </ngx-gooey>
+  `
+})
+export class ExampleComponent {}
+```
+
+**For NgModule-based applications:**
+
+```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -37,13 +60,6 @@ import { Gooey } from 'ngx-gooey';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-```
-
-Or directly into a standalone component:
-
-```js
-  standalone: true,
-  imports: [Gooey],
 ```
 
 Then use it in your template:

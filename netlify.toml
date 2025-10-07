@@ -1,0 +1,9 @@
+[build]
+  base = "docs"
+  command = "mv angular.json angular.json.tmp && rm -rf node_modules && npm install --force && mv angular.json.tmp angular.json && npm run build"
+  publish = "dist/ngx-gooey"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
