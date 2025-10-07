@@ -1,7 +1,13 @@
 [build]
   base = "docs"
   command = "npm install --force && npm run build"
-  publish = "dist/ngx-gooey/browser/browser"
+  publish = "dist/ngx-gooey"
+  ignore = "/bin/false"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
+  [plugins.inputs]
+    disable = true
 
 [[redirects]]
   from = "/*"
