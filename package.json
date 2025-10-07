@@ -3,6 +3,7 @@
   "version": "20.0.0",
   "scripts": {
     "build": "ng build ngx-gooey",
+    "build:docs": "npm run build && cd docs && npm install && npm run build",
     "build:release": "ng build --configuration production",
     "build:watch": "ng build ngx-gooey --watch",
     "ng": "ng",

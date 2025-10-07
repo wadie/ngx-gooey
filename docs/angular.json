@@ -55,7 +55,7 @@
             ],
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "outputPath": "dist/demo",
+            "outputPath": "dist/ngx-gooey",
             "scripts": [],
             "styles": [
               "node_modules/@ng-doc/app/styles/global.css",

@@ -1,19 +1,7 @@
 [build]
-  # Build the main Angular library and add landing page
-  base = "."
-  command = "npm ci && npm run build:release && cp landing.html dist/index.html"
-  publish = "dist"
-
-[build.environment]
-  NODE_VERSION = "22"
-  NPM_VERSION = "10"
-
-# Settings to ignore docs folder
-[context.production]
-  command = "npm ci && npm run build:release"
-  
-[context.deploy-preview]
-  command = "npm ci && npm run build:release"
+  base = "docs"
+  command = "npm install && npm run build"
+  publish = "dist/ngx-gooey"
 
 [[redirects]]
   from = "/*"

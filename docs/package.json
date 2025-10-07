@@ -29,7 +29,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run prebuild && ng build",
+    "prebuild": "cd .. && npm install && npm run build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
