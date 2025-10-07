@@ -20,6 +20,8 @@
     "importHelpers": true,
     "target": "ES2022",
     "useDefineForClassFields": false,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
     "typeRoots": [
       "node_modules/@types"
     ],

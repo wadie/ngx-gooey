@@ -64,7 +64,8 @@
             "tsConfig": "src/tsconfig.app.json",
             "allowedCommonJsDependencies": [
               "@ng-doc/core"
-            ]
+            ],
+            "preserveSymlinks": true
           }
         },
         "serve": {

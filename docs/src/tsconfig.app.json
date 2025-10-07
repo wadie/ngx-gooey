@@ -3,6 +3,8 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "outDir": "../out-tsc/app",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
     "types": []
   },
   "files": ["main.ts"],
