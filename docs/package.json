@@ -27,7 +27,7 @@
     "@ng-doc/builder": "20.2.0",
     "@ng-doc/core": "20.2.0",
     "@ng-doc/ui-kit": "20.2.0",
-    "@ng-web-apis/common": "2.2.0",
+    "@ng-web-apis/common": "4.0.0",
     "@ngneat/until-destroy": "10.0.0",
     "@tinkoff/ng-polymorpheus": "4.3.0",
     "di-controls": "2.1.0",
