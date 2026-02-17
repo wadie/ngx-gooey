@@ -34,7 +34,7 @@
     "@tinkoff/ng-polymorpheus": "4.3.0",
     "di-controls": "2.1.0",
 
-    "ngx-gooey": "file:../dist",
+    "ngx-gooey": "20.0.0",
 
     "rxjs": "7.8.1",
     "tailwind": "4.0.0",
