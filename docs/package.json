@@ -39,10 +39,10 @@
   },
 
   "devDependencies": {
-    "@angular/build": "20.2.14",
-    "@angular/cli": "20.2.14",
-    "@angular/compiler-cli": "20.2.14",
-    "@angular/language-service": "20.2.14",
+    "@angular/build": "20.3.14",
+    "@angular/cli": "20.3.14",
+    "@angular/compiler-cli": "20.3.14",
+    "@angular/language-service": "20.3.14",
     "@types/jasmine": "5.1.5",
     "@types/jasminewd2": "2.0.13",
     "@types/node": "22.13.0",
