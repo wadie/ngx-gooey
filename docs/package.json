@@ -22,7 +22,7 @@
     "@angular/forms": "20.2.14",
     "@angular/platform-browser": "20.2.14",
     "@angular/platform-browser-dynamic": "20.2.14",
-    "@angular/router": "20.2.14",
+    "@angular/router": "20.3.14",
     "@ng-doc/app": "20.2.0",
     "@ng-doc/builder": "20.2.0",
     "@ng-doc/core": "20.2.0",
