@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run prebuild && ng build",
+    "build": "ng build",
     "prebuild": "cd .. && npm install && npm run build",
     "test": "ng test",
     "lint": "ng lint",
