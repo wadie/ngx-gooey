@@ -40,7 +40,7 @@
     "@angular/common": "^20.3.14",
     "@angular/compiler": "^21.1.5",
     "@angular/compiler-cli": "^20.3.3",
-    "@angular/core": "^20.3.13",
+    "@angular/core": "^20.3.14",
     "@angular/forms": "^20.3.3",
     "@angular/language-service": "^20.3.3",
     "@angular/platform-browser": "^20.3.3",
