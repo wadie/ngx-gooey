@@ -1,23 +1,35 @@
-# [![npm version](http://img.shields.io/npm/v/ngx-gooey.svg)](https://npmjs.org/package/ngx-gooey) [![StackBlitz](https://img.shields.io/badge/stackblitz-online-orange.svg)](https://stackblitz.com/edit/ngx-gooey)
+# [![npm version](http://img.shields.io/npm/v/ngx-gooey.svg)](https://npmjs.org/package/ngx-gooey) [![Angular](https://img.shields.io/badge/Angular-21%2B-red.svg)](https://angular.io/) [![StackBlitz](https://img.shields.io/badge/stackblitz-online-orange.svg)](https://stackblitz.com/edit/ngx-gooey)
 
 <p align="center">
   <img alt="Preview" src="docs/assets/preview.gif" height="260" width="260">
 </p>
 <p align="center">
-<h1 align="center">The gooey effect for Angular</h1> 
+<h1 align="center">The gooey effect for Angular 21+</h1> 
 </p>
-The 'gooey effect' has been made popular by various (amazing) blogposts over the years. This tiny component makes it easy to use within Angular, and has improved the implementation. It's optimized to be as sharp/crisp as possible, since existing implementations can be a bit blurry. Safari support (which can be notorious, and is usually missing) has been added as well.
 
+The 'gooey effect' has been made popular by various (amazing) blogposts over the years. This tiny component makes it easy to use within Angular applications, and has improved the implementation. It's optimized to be as sharp/crisp as possible, since existing implementations can be a bit blurry. Safari support (which can be notorious, and is usually missing) has been added as well.
 
-## Installation
+## ⚡ Angular 21 Ready
 
-```sh
+This library has been updated to support **Angular 21** and uses modern Angular features including:
+- ✅ Standalone components (Angular 14+ syntax)
+- ✅ Modern ES2022 output
+- ✅ Optimized bundle size
+- ✅ TypeScript 5.9+ support
+
+## 📦 Installation
+
+```bash
 npm install ngx-gooey
 ```
 
-## Usage
+**Requirements:**
+- Angular 21+
+- TypeScript 5.9+
 
-**For Angular with Standalone Components (Recommended):**
+## 🚀 Usage
+
+**Modern Standalone Components (Angular 14+, Recommended):**
 
 ```typescript
 import { Component } from '@angular/core';
@@ -28,33 +40,44 @@ import { Gooey } from 'ngx-gooey';
   standalone: true,
   imports: [Gooey],
   template: `
-    <ngx-gooey>
-      <svg width="200" height="100">
-        <circle cx="50" cy="50" r="20" fill="blue"/>
-        <circle cx="100" cy="50" r="20" fill="red"/>
-      </svg>
+    <ngx-gooey intensity="medium">
+      <div class="blob-container">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+      </div>
     </ngx-gooey>
-  `
+  `,
+  styles: [`
+    .blob-container {
+      display: flex;
+      gap: 20px;
+      padding: 50px;
+    }
+    .blob {
+      width: 60px;
+      height: 60px;
+      background: #ff6b6b;
+      border-radius: 50%;
+    }
+  `]
 })
 export class ExampleComponent {}
 ```
 
-**For NgModule-based applications:**
+**Legacy NgModule-based Applications:**
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-
-// Import the library
 import { Gooey } from 'ngx-gooey';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    Gooey, // <-- Add this line
+    Gooey, // Add the Gooey component
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -62,16 +85,61 @@ import { Gooey } from 'ngx-gooey';
 export class AppModule {}
 ```
 
-Then use it in your template:
+**In your component template:**
 
 ```html
-<ngx-gooey> … </ngx-gooey>
+<ngx-gooey 
+  intensity="strong" 
+  [composite]="true"
+  className="my-gooey-effect">
+  <!-- Your content here -->
+  <div class="animated-elements">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</ngx-gooey>
 ```
 
-You can put regular HTML elements inside `ngx-gooey`, but using an SVG is recommended for better browser support. Shape blobbing will be applied to everything within the component.
+## 🎛️ Component Properties
 
-[Visit the website](https://ngx-gooey.netlify.app/) for full documentation, properties and examples.
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `intensity` | `'weak' \| 'medium' \| 'strong'` | `'medium'` | Controls the strength of the gooey effect |
+| `composite` | `boolean` | `false` | Enables composite blending for enhanced effects |
+| `className` | `string` | `undefined` | CSS class to apply to the wrapper element |
+| `id` | `string` | `'gooey-angular'` | Unique ID for the SVG filter |
+| `style` | `object` | `undefined` | Inline styles to apply to the wrapper |
 
-## Related
+## 💡 Tips & Best Practices
 
-inspired by [gooey-react](https://github.com/luukdv/gooey-react)
+- **Use SVG for best results**: While HTML elements work, SVG provides the most consistent cross-browser support
+- **Optimize performance**: The gooey effect uses CSS filters, so avoid using too many instances on one page
+- **Safari compatibility**: This implementation includes optimizations for Safari, which often has issues with gooey effects
+
+## 🔄 Version Compatibility
+
+| ngx-gooey Version | Angular Version | TypeScript Version |
+|-------------------|-----------------|-------------------|
+| 21.x.x | Angular 21+ | TypeScript 5.9+ |
+| 20.x.x | Angular 20 | TypeScript 5.8+ |
+| 19.x.x | Angular 19 | TypeScript 5.7+ |
+
+## 📚 Documentation & Examples
+
+[Visit the website](https://ngx-gooey.netlify.app/) for:
+- 🎨 Interactive examples
+- 📖 Complete API documentation  
+- 🎯 Advanced usage patterns
+- 🔧 Configuration options
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Related
+
+Inspired by [gooey-react](https://github.com/luukdv/gooey-react)

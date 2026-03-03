@@ -1,6 +1,6 @@
 {
   "name": "ngx-gooey",
-  "version": "21.0.0",
+  "version": "21.0.1",
   "scripts": {
     "build": "npx ng-packagr -p ng-package.json",
     "build:docs": "npm run build && cd docs && npm install && npm run build",
