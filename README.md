@@ -1,4 +1,4 @@
-# [![npm version](http://img.shields.io/npm/v/ngx-gooey.svg)](https://npmjs.org/package/ngx-gooey) [![Angular](https://img.shields.io/badge/Angular-21%2B-red.svg)](https://angular.io/) [![StackBlitz](https://img.shields.io/badge/stackblitz-online-orange.svg)](https://stackblitz.com/edit/ngx-gooey)
+# [![npm version](http://img.shields.io/npm/v/ngx-gooey.svg)](https://npmjs.org/package/ngx-gooey) [![StackBlitz](https://img.shields.io/badge/stackblitz-online-orange.svg)](https://stackblitz.com/edit/ngx-gooey)
 
 <p align="center">
   <img alt="Preview" src="docs/assets/preview.gif" height="260" width="260">
@@ -8,14 +8,6 @@
 </p>
 
 The 'gooey effect' has been made popular by various (amazing) blogposts over the years. This tiny component makes it easy to use within Angular applications, and has improved the implementation. It's optimized to be as sharp/crisp as possible, since existing implementations can be a bit blurry. Safari support (which can be notorious, and is usually missing) has been added as well.
-
-## ⚡ Angular 21 Ready
-
-This library has been updated to support **Angular 21** and uses modern Angular features including:
-- ✅ Standalone components (Angular 14+ syntax)
-- ✅ Modern ES2022 output
-- ✅ Optimized bundle size
-- ✅ TypeScript 5.9+ support
 
 ## 📦 Installation
 
