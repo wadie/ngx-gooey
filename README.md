@@ -4,7 +4,7 @@
   <img alt="Preview" src="docs/assets/preview.gif" height="260" width="260">
 </p>
 <p align="center">
-<h1 align="center">The gooey effect for Angular 21+</h1> 
+<h1 align="center">The gooey effect for Angular</h1> 
 </p>
 
 The 'gooey effect' has been made popular by various (amazing) blogposts over the years. This tiny component makes it easy to use within Angular applications, and has improved the implementation. It's optimized to be as sharp/crisp as possible, since existing implementations can be a bit blurry. Safari support (which can be notorious, and is usually missing) has been added as well.
@@ -14,10 +14,6 @@ The 'gooey effect' has been made popular by various (amazing) blogposts over the
 ```bash
 npm install ngx-gooey
 ```
-
-**Requirements:**
-- Angular 21+
-- TypeScript 5.9+
 
 ## 🚀 Usage
 
