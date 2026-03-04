@@ -110,11 +110,11 @@ export class AppModule {}
 
 ## 🔄 Version Compatibility
 
-| ngx-gooey Version | Angular Version | TypeScript Version |
+| ngx-gooey Version | Angular Version
 |-------------------|-----------------|-------------------|
-| 21.x.x | Angular 21+ | TypeScript 5.9+ |
-| 20.x.x | Angular 20 | TypeScript 5.8+ |
-| 19.x.x | Angular 19 | TypeScript 5.7+ |
+| 21.x.x | Angular 21+
+| 20.x.x | Angular 20
+| 19.x.x | Angular 19
 
 ## 📚 Documentation & Examples
 
