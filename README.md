@@ -7,7 +7,7 @@
 <h1 align="center">The gooey effect for Angular</h1> 
 </p>
 
-The 'gooey effect' has been made popular by various (amazing) blogposts over the years. This tiny component makes it easy to use within Angular applications, and has improved the implementation. It's optimized to be as sharp/crisp as possible, since existing implementations can be a bit blurry. Safari support (which can be notorious, and is usually missing) has been added as well.
+The 'gooey effect' has been made popular by various (amazing) blogposts over the years. This tiny component makes it easy to use within Angular applications, and has improved the implementation. It is standalone-first and ready for Angular 21.
 
 ## 📦 Installation
 
@@ -15,9 +15,9 @@ The 'gooey effect' has been made popular by various (amazing) blogposts over the
 npm install ngx-gooey
 ```
 
-## 🚀 Usage
+## 🚀 Usage (Angular 21)
 
-**Modern Standalone Components (Angular 14+, Recommended):**
+### Standalone components (recommended)
 
 ```typescript
 import { Component } from '@angular/core';
@@ -42,6 +42,7 @@ import { Gooey } from 'ngx-gooey';
       gap: 20px;
       padding: 50px;
     }
+
     .blob {
       width: 60px;
       height: 60px;
@@ -53,11 +54,13 @@ import { Gooey } from 'ngx-gooey';
 export class ExampleComponent {}
 ```
 
-**Legacy NgModule-based Applications:**
+### NgModule-based apps
+
+If your app still uses NgModules, import the standalone `Gooey` component in your module's `imports`:
 
 ```typescript
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { Gooey } from 'ngx-gooey';
 
@@ -65,22 +68,20 @@ import { Gooey } from 'ngx-gooey';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    Gooey, // Add the Gooey component
+    Gooey,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
 ```
 
-**In your component template:**
+### Template example
 
 ```html
-<ngx-gooey 
-  intensity="strong" 
+<ngx-gooey
+  intensity="strong"
   [composite]="true"
   className="my-gooey-effect">
-  <!-- Your content here -->
   <div class="animated-elements">
     <div class="circle"></div>
     <div class="circle"></div>
@@ -88,7 +89,7 @@ export class AppModule {}
 </ngx-gooey>
 ```
 
-## 🎛️ Component Properties
+## 🎛️ Component properties
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
@@ -98,25 +99,25 @@ export class AppModule {}
 | `id` | `string` | `'gooey-angular'` | Unique ID for the SVG filter |
 | `style` | `object` | `undefined` | Inline styles to apply to the wrapper |
 
-## 💡 Tips & Best Practices
+## 🔄 Version compatibility
 
-- **Use SVG for best results**: While HTML elements work, SVG provides the most consistent cross-browser support
-- **Optimize performance**: The gooey effect uses CSS filters, so avoid using too many instances on one page
-- **Safari compatibility**: This implementation includes optimizations for Safari, which often has issues with gooey effects
+| ngx-gooey Version | Angular Version |
+|-------------------|-----------------|
+| 21.x.x | Angular 21 |
+| 20.x.x | Angular 20 |
+| 19.x.x | Angular 19 |
 
-## 🔄 Version Compatibility
+## 💡 Tips & best practices
 
-| ngx-gooey Version | Angular Version
-|-------------------|-----------------|-------------------|
-| 21.x.x | Angular 21+
-| 20.x.x | Angular 20
-| 19.x.x | Angular 19
+- **Use SVG for best results**: While HTML elements work, SVG provides the most consistent cross-browser support.
+- **Optimize performance**: The gooey effect uses CSS filters, so avoid using too many instances on one page.
+- **Safari compatibility**: This implementation includes Safari-focused filter handling.
 
-## 📚 Documentation & Examples
+## 📚 Documentation & examples
 
 [Visit the website](https://ngx-gooey.netlify.app/) for:
 - 🎨 Interactive examples
-- 📖 Complete API documentation  
+- 📖 Complete API documentation
 - 🎯 Advanced usage patterns
 - 🔧 Configuration options
 
